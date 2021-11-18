@@ -14,6 +14,9 @@ Toggle custom hook and component wrapper for React 🔦
 
 - [Installing](#installing)
 - [Example usage](#example-usage)
+  - [Toggle hook - `useToggle()`](#toggle-hook---usetoggle)
+  - [Toggle wrapper - `<ToggleWrap />`](#toggle-wrapper---togglewrap-)
+- [API](#api)
   - [Toggle hook](#toggle-hook)
   - [Toggle wrapper](#toggle-wrapper)
 - [Suggestions and/or questions](#suggestions-andor-questions)
@@ -34,7 +37,9 @@ yarn add @kodingdotninja/use-toggle
 
 ## Example usage
 
-### Toggle hook
+### Toggle hook - `useToggle()`
+
+Use it as your usual hooks. `disable`, `enable`, or `toggle` does not accept parameters so you can use it on `onClick` handlers.
 
 ```jsx
 import { useToggle } from "@kodingdotninja/use-toggle";
@@ -53,7 +58,9 @@ function App() {
 }
 ```
 
-### Toggle wrapper
+### Toggle wrapper - `<ToggleWrap />`
+
+Component which wraps the children with its internal hooks. Use this if you do not want to declare another component and just wrap it.
 
 ```jsx
 import { ToggleWrap } from "kodingdotninja/use-toggle";
@@ -74,6 +81,16 @@ function App() {
   );
 }
 ```
+
+## API
+
+### Toggle hook
+
+TODO
+
+### Toggle wrapper
+
+TODO
 
 ## Suggestions and/or questions
 
