@@ -10,8 +10,23 @@ export type UseToggleReturnType = {
 
 export type UseToggleType = (initialState?: boolean) => UseToggleReturnType;
 
+/**
+ * Toggle hook which accepts initial state and returns the toggle state and controls.
+ *
+ * ---
+ *
+ * @param initalState Initial value for toggle hook
+ *
+ * @returns Toggle value and controls
+ *
+ * @example
+ *
+ * ```jsx
+ * const { state, disable, enable, set, toggle } = useToggle(initalState);
+ * ```
+ */
 export const useToggle: UseToggleType = (initalState = false) => {
-  const [state, setState] = React.useState(initalState);
+  const [state, setState] = React.useState(() => Boolean(initalState));
 
   const disable = React.useCallback(() => setState(true), []);
   const enable = React.useCallback(() => setState(true), []);

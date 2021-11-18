@@ -8,8 +8,8 @@ Toggle custom hook and component wrapper for React 🔦
 
 **Table of contents**
 
-- [Install](#install)
-- [Usage](#usage)
+- [Installing](#installing)
+- [Example usage](#example-usage)
   - [Toggle hook](#toggle-hook)
   - [Toggle wrapper](#toggle-wrapper)
 - [Suggestions and/or questions](#suggestions-andor-questions)
@@ -18,7 +18,7 @@ Toggle custom hook and component wrapper for React 🔦
 
 ---
 
-## Install
+## Installing
 
 ```sh
 # using npm
@@ -28,7 +28,7 @@ npm install @kodingdotninja/use-toggle
 yarn add @kodingdotninja/use-toggle
 ```
 
-## Usage
+## Example usage
 
 ### Toggle hook
 
@@ -52,9 +52,9 @@ function App() {
 ### Toggle wrapper
 
 ```jsx
-import { ToggleWrap } from "..";
+import { ToggleWrap } from "kodingdotninja/use-toggle";
 
-export default function App() {
+function App() {
   return (
     <ToggleWrap>
       {({ state, disable, enable, set, toggle }) => (
