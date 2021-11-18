@@ -28,7 +28,7 @@ export type UseToggleType = (initialState?: boolean) => UseToggleReturnType;
 export const useToggle: UseToggleType = (initalState = false) => {
   const [state, setState] = React.useState(() => Boolean(initalState));
 
-  const disable = React.useCallback(() => setState(true), []);
+  const disable = React.useCallback(() => setState(false), []);
   const enable = React.useCallback(() => setState(true), []);
   const set = React.useCallback((newState: unknown) => setState(Boolean(newState)), []);
   const toggle = React.useCallback(() => setState((prev) => !prev), []);
