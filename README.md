@@ -2,6 +2,10 @@
 
 # use-toggle
 
+![npm](https://badgen.net/npm/v/@kodingdotninja/use-toggle)
+![packagephobia/install](https://badgen.net/packagephobia/install/@kodingdotninja/use-toggle)
+![packagephobia/publish](https://badgen.net/packagephobia/publish/@kodingdotninja/use-toggle)
+
 Toggle custom hook and component wrapper for React 🔦
 
 ---
