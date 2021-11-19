@@ -63,7 +63,7 @@ function App() {
 Component which wraps the children with its internal hooks. Use this if you do not want to declare another component and just wrap it.
 
 ```jsx
-import { ToggleWrap } from "kodingdotninja/use-toggle";
+import { ToggleWrap } from "@kodingdotninja/use-toggle";
 
 function App() {
   return (
