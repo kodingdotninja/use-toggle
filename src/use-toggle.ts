@@ -4,7 +4,7 @@ export type UseToggleReturnType = {
   state: boolean;
   disable: () => void;
   enable: () => void;
-  set: (newState?: unknown) => void;
+  set: (newState: boolean) => void;
   toggle: () => void;
 };
 
@@ -26,11 +26,11 @@ export type UseToggleType = (initialState?: boolean) => UseToggleReturnType;
  * ```
  */
 export const useToggle: UseToggleType = (initalState = false) => {
-  const [state, setState] = React.useState(() => Boolean(initalState));
+  const [state, setState] = React.useState<boolean>(initalState);
 
   const disable = React.useCallback(() => setState(false), []);
   const enable = React.useCallback(() => setState(true), []);
-  const set = React.useCallback((newState: unknown) => setState(Boolean(newState)), []);
+  const set = React.useCallback((newState: boolean) => setState(newState), []);
   const toggle = React.useCallback(() => setState((prev) => !prev), []);
 
   return { state, disable, enable, set, toggle };
