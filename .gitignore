@@ -6,6 +6,7 @@
 .pnp.*
 .yarn/*
 dist/
+docs/
 package-lock.json
 yarn.lock
 

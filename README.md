@@ -18,8 +18,6 @@ Toggle custom hook and component wrapper for React 🔦
   - [Toggle wrapper - `<ToggleWrap />`](#toggle-wrapper---togglewrap-)
   - [`<ClientOnly />`](#clientonly-)
 - [API](#api)
-  - [Toggle hook](#toggle-hook)
-  - [Toggle wrapper](#toggle-wrapper)
 - [Suggestions and/or questions](#suggestions-andor-questions)
 - [Maintainers](#maintainers)
 - [License](#license)
@@ -101,13 +99,7 @@ function App() {
 
 ## API
 
-### Toggle hook
-
-TODO
-
-### Toggle wrapper
-
-TODO
+Read the full API documentation on <https://use-toggle-api-docs.koding.ninja>.
 
 ## Suggestions and/or questions
 

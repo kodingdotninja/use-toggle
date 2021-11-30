@@ -16,5 +16,10 @@
     "strictNullChecks": true,
     "target": "es2017"
   },
-  "exclude": ["dist", "node_modules"]
+  "exclude": ["dist", "docs", "node_modules"],
+  "typedocOptions": {
+    "entryPoints": ["src/index.ts"],
+    "includeVersion": true,
+    "out": "docs"
+  }
 }
