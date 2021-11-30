@@ -16,6 +16,7 @@ Toggle custom hook and component wrapper for React 🔦
 - [Example usage](#example-usage)
   - [Toggle hook - `useToggle()`](#toggle-hook---usetoggle)
   - [Toggle wrapper - `<ToggleWrap />`](#toggle-wrapper---togglewrap-)
+  - [`<ClientOnly />`](#clientonly-)
 - [API](#api)
   - [Toggle hook](#toggle-hook)
   - [Toggle wrapper](#toggle-wrapper)
@@ -78,6 +79,22 @@ function App() {
         </div>
       )}
     </ToggleWrap>
+  );
+}
+```
+
+### `<ClientOnly />`
+
+Same as `<ToggleWrap enableOnMount initialState={false} />`, usually used on client-side only components.
+
+```jsx
+import { ClientOnly } from "@kodingdotninja/use-toggle";
+
+function App() {
+  return (
+    <ClientOnly>
+      <div>...</div>
+    </ClientOnly>
   );
 }
 ```
