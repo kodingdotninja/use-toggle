@@ -1,7 +1,7 @@
 {
   "name": "@kodingdotninja/use-toggle",
   "description": "Toggle custom hook and component wrapper for React 🔦",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "author": "Griko Nibras <griko@koding.ninja>",
   "homepage": "https://github.com/kodingdotninja/use-toggle",
   "repository": "https://github.com/kodingdotninja/use-toggle.git",
